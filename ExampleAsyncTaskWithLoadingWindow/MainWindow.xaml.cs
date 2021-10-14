@@ -2,6 +2,7 @@
 using System;
 using System.Windows.Media;
 using UniversalLoadingWindowLib;
+using System.Threading;
 
 namespace ExampleAsyncTaskWithLoadingWindow
 {
@@ -33,6 +34,7 @@ namespace ExampleAsyncTaskWithLoadingWindow
             {
                 ulw.SetPercentProgress(Convert.ToByte((((double)i / (double)15000000)) * 100));
             }
+            Thread.Sleep(1000); //For show 100%
         }
     }
 }
