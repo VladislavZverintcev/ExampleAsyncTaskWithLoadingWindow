@@ -14,14 +14,13 @@ namespace ExampleAsyncTaskWithLoadingWindow
         public MainWindow()
         {
             InitializeComponent();
-
             Color a = new Color { A = 255, R = 45, G = 70, B = 100 };
             Color b = new Color { A = 255, R = 70, G = 110, B = 160 };
             LinearGradientBrush mainbrush = new LinearGradientBrush(a, b, 90);
             Color title_foreground = new Color { A = 255, R = 180, G = 170, B = 50 };
             Color annotation_foreground = new Color { A = 255, R = 170, G = 200, B = 225 };
             string title = "Loading";
-            string annotation = "Pleace, wait few seconds...";
+            string annotation = "Please, wait few seconds...";
 
             UniversalLoadingWindow ulw = new UniversalLoadingWindow(title, annotation, mainbrush,
                 title_foreground, title_foreground, annotation_foreground);
